@@ -1,40 +1,31 @@
 {
-  "name": "client",
+  "name": "mern",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:3000/",
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.6",
-    "@testing-library/react": "^11.2.2",
-    "@testing-library/user-event": "^12.2.2",
+    "aos": "^2.3.4",
+    "axios": "^0.19.2",
     "firebase": "^8.1.1",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
+    "firebase-react": "^1.0.3",
+    "react": "^16.6.3",
+    "react-calendar": "^3.1.0",
+    "react-dom": "^16.6.3",
+    "react-firebase": "^2.2.8",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.1",
-    "web-vitals": "^0.2.4"
+    "react-scripts": "^2.1.1",
+    "react-scroll": "^1.8.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
