@@ -1,0 +1,75 @@
+.jumbotron{
+    background: url("./assets/wrestling.jpg"); 
+    height: 400px;
+    object-fit: contain !important;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    filter: blur(8px);
+    -webkit-filter: blur(2px);
+    border: 2px solid rgb(56, 56, 56);
+}
+.jumbotron::after{
+    content: "";
+    top: 0px !important;
+    left: 0px !important;
+    margin-top: 0px;
+    height: 400px;
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+}
+.container{
+    /* position: absolute !important; */
+    left: 0%;
+    right: -90px;
+    width: 100%;
+    text-align:  center;
+    top: 200px; 
+}
+.jumbotron-header-text {
+    color: red;
+    text-shadow: rgb(209, 0, 0) 1px 1px .5px;
+    size: 300px;
+    font-weight: 700; 
+}
+
+.about-card, .testimonial-card, .join-card, .history-card, .contact-card{
+    background-color: rgba(51, 51, 51, 0.3);
+    border: 1px solid rgb(44, 44, 44) !important;
+    color: rgba(241, 241, 241, 0.8)
+}
+
+#menu-ul {
+    list-style-type: none;
+    display: flex;
+    align-items: stretch; /* Default */
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+#menu li {
+    list-style-type: none;
+    padding: 0 30px;
+    display:inline;
+    flex: 0 1 auto; /* Default */
+    list-style: none;
+    background: #fafafa;
+}
+
+#menu-li-a, #menu-li i {
+    font-size: x-large;
+}
+#menu-li-a {
+    color: rgba(241, 241, 241, 0.8) !important;
+    
+}
+
+#menu-li i{
+    margin-right: 10px
+}
+#menu-li-a:active {
+    color: rgba(241, 241, 241, 0.8) !important
+}
+
